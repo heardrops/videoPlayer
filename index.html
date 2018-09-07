@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="play.css">
+	<script type="text/javascript" src="jquery-1.12.2.js"></script>
+	<script type="text/javascript" src="play.js"></script>
+</head>
+<body>
+	<div id="main">
+		<video id="video" poster="images/movie.jpg">
+			<source src="movie5.ogv">
+		</video>
+
+		<!--视频中央的大按钮-->
+		<div id="bigBtn">
+			<span></span>
+		</div>
+
+		<!--播放进度条-->
+		<div id="progress">
+			<!--开始时间-->
+			<div id="currentTime">00:00:00</div>
+			<!--播放进度条-->
+			<div id="progressBar">
+				<!--已完成进度-->
+				<div id="playedProgressBar"></div>
+				<!--已完成进度条后的白框-->
+				<span id="progressBarBlock"></span>
+			</div>
+			<!--剩余时间-->
+			<div id="durationTime">00:00:00</div>
+		</div>
+
+		<!--播放时的各种功能按钮-->
+		<div id="buttonTools">
+
+			<!--小的停止按钮-->
+			<div id="smallBtn">
+				<img src="images/stop.jpg" alt="停止" title="停止">
+			</div>
+
+			<!--音量键-->
+			<div id="voice">
+				<div id="voicePic">
+					<img src="images/voice.jpg" title="音量" alt="音量">
+				</div>
+
+				<!--音量的高度条-->
+				<div id="voiceLine">
+					<span id="voiceLineBlock"></span>
+				</div>
+			</div>
+			<div id="myStyle">我的播放我做主</div>
+
+			<!--全屏按钮-->
+			<div id="fullScreen">
+				<img src="images/full.png" alt="全屏" title="全屏">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
